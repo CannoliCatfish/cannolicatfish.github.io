@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Enjoy rediscovering the world of Minecraft with various changes to the world, from an exention of both
+        Enjoy rediscovering the world of Minecraft with various changes to the world, from an extention of both
 		soil and rock types to the use of new mechanics to interact with plenty of new things in the world, such as through processes of Treetapping, Crushing,
 		and Sluicing.
       </>
@@ -20,8 +20,8 @@ const FeatureList = [
     description: (
       <>
         Project Rankine features a host of mechanics which emphasize the use of experimentation and a high degree of
-		customizability. Make your alloy compositions using the elements of the Periodic Table to tailor tools to your specific desires.
-		
+		customizability. Make your alloy compositions using the elements of the Periodic Table to tailor tools to your specific desires. 
+		Additionally, enjoy a wide array of decoration options as well as multiblock structures to gain additional resources or utilize optional mechanics.
       </>
     ),
   },
@@ -32,7 +32,7 @@ const FeatureList = [
       <>
         Various gameplay elements have been added to all stages of the game, so don't feel afraid to slow down and take the time to explore other
 		avenues outside of progression. With an extensive configuration file, Project Rankine can also be customized in many ways
-		to provide an experience specific to your preferences.
+		to provide an experience specific to your preferences. The goal when playing Project Rankine is up to you.
       </>
     ),
   },

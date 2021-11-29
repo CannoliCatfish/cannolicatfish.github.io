@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <Layout
       title={`Landing Page`}
-      description="Description will go into a meta tag in <head />">
+      description="A mod of alloying and geology with an emphasis on experimentation and exploration for Minecraft 1.16.5.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
