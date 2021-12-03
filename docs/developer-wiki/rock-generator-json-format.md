@@ -1,0 +1,1 @@
+# Rock Generator JSON Format

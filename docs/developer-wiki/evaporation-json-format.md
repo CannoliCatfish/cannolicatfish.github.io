@@ -1,6 +1,3 @@
----
-sidebar_position: 6
----
 # Evaporation JSON Format
 
 A recipe type that is used by the Evaporation Boiler and Evaporation Tower structures. 

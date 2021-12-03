@@ -1,6 +1,3 @@
----
-sidebar_position: 3
----
 # Beehive Oven JSON Format
 
 A simple recipe type that allows use of the beehive oven to turn one block into another block. Therefore, a prerequisite for using this recipe type is that both the input and output are recognized as blocks.

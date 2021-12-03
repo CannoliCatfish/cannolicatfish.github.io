@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Alloying JSON Format
 
 Different from the alloy_crafting type, the Alloying recipe type reflects the actual creation of an alloy in the Alloy Furnace and the Induction Furnace. Due to the highly variable nature of alloys, this recipe type is the most complex. All alloying recipes in Project Rankine are also located in a subfolder labelled alloying.
