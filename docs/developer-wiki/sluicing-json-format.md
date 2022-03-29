@@ -1,4 +1,7 @@
-# Sluicing JSON Format
+---
+id: sluicing-json-format
+title: Sluicing JSON Format
+---
 
 A recipe type that is used by the Steel Gold Pan to obtain random items from certain blocks. 
 

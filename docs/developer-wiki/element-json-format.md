@@ -1,4 +1,7 @@
-# Element JSON Format
+---
+id: element-json-format
+title: Element JSON Format
+---
 
 The Element recipe type, introduced in Version 1.3, is used primarily to establish various stats for the alloying system of the mod. 
 
@@ -23,7 +26,7 @@ used in processes similar to the Rankine Box in the future.
 (Special case: using rankine:random as an enchantment will attempt to put a random enchantment on the target item made by using this element)
 
 **enchantmentTypes**: JSON Array (string), set to empty by default. Used in conjunction with the **enchantments** array to specify what the enchantment will be affecting. Possible options are:
-["ALL","TOOLS","ARMOR","PICKAXE","AXE","SPEAR","SHOVEL","HOE","SWORD","HAMMER","KNIFE","CROWBAR","HELMET","CHESTPLATE","LEGGINGS","BOOTS"]
+["ALL","TOOLS","ARMOR","PICKAXE","AXE","SPEAR","SHOVEL","HOE","SWORD","HAMMER","KNIFE","CROWBAR","BLUNDERBUSS","HELMET","CHESTPLATE","LEGGINGS","BOOTS"]
 
 **enchantmentFactors**: Float, set to 0f by default. Sets what each percentage point of the element contributes to the progress of obtaining the element from the alloy.
 

@@ -1,1 +1,4 @@
-# Mixing JSON Format
+---
+id: mixing-json-format
+title: Mixing JSON Format
+---

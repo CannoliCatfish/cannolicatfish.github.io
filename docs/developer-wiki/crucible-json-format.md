@@ -1,4 +1,7 @@
-# Crucible JSON Format
+---
+id: crucible-json-format
+title: Crucible JSON Format
+---
 
 The Crucible recipe type is used for the Crucible block obtained in the middle of progression through the mod. It is typically used at that point to obtain Steel, as well as other smaller products such as redstone and glass.
 

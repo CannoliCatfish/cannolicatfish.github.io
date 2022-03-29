@@ -1,4 +1,7 @@
-# Crushing JSON Format
+---
+id: crushing-json-format
+title: Crushing JSON Format
+---
 
 Crushing recipes are used to produce outputs in the Piston Crusher and its affiliates, as well as influence the result of using a hammer on a block in the world.
 

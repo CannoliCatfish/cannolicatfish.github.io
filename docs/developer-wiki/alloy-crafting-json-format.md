@@ -1,5 +1,7 @@
-# Alloy Crafting JSON Format
-
+---
+id: alloy-crafting-json-format
+title: Alloy Crafting JSON Format
+---
 Alloy Crafting recipes are used to produce outputs in the crafting table which pass data of the alloy from the ingredients to the result.
 It functions just as a normal crafting recipe, except it contains two additional arguments.
 
