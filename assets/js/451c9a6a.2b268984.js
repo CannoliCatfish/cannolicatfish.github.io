@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9868],{7622:function(e){e.exports=JSON.parse('{"allTagsPath":"/blog/tags","name":"project-rankine","count":1,"permalink":"/blog/tags/project-rankine"}')}}]);

@@ -13,11 +13,14 @@
         <link href="https://cannolicatfish.github.io/blog/welcome"/>
         <updated>2021-11-29T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the website for Project Rankine, a mod for (currently) Minecraft 1.16.5!]]></summary>
-        <content type="html"><![CDATA[<p>Welcome to the website for <strong>Project Rankine</strong>, a mod for (currently) Minecraft 1.16.5!</p><p>This website will be used to post useful information regarding our mod in the <a href="https://cannolicatfish.github.io/docs/home">wiki</a> as well as keep those interested up-to-date with our progress with the <strong>blog</strong>.
-Information and showcases will still likely also be posted at our <a href="https://discord.gg/EBtSqDN">Discord</a>. If you haven&#x27;t joined yet, please do! We have a wonderful community that can help out if you have any questions about the mod or simply want to discuss any aspect of it.</p><p>We have plenty of things still left in store for Project Rankine. We hope you enjoy our mod, whether you are a newcomer or someone who has been playing our mod for a while!</p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to the website for <strong>Project Rankine</strong>, a mod for (currently) Minecraft 1.16.5!</p><p>This website will be used to post useful information regarding our mod in the <a href="https://cannolicatfish.github.io/docs/home" target="_blank" rel="noopener noreferrer">wiki</a> as well as keep those interested up-to-date with our progress with the <strong>blog</strong>.
+Information and showcases will still likely also be posted at our <a href="https://discord.gg/EBtSqDN" target="_blank" rel="noopener noreferrer">Discord</a>. If you haven't joined yet, please do! We have a wonderful community that can help out if you have any questions about the mod or simply want to discuss any aspect of it.</p><p>We have plenty of things still left in store for Project Rankine. We hope you enjoy our mod, whether you are a newcomer or someone who has been playing our mod for a while!</p>]]></content>
         <author>
             <name>CannoliCatfish</name>
             <uri>https://github.com/cannolicatfish</uri>
         </author>
+        <category label="hello" term="hello"/>
+        <category label="project-rankine" term="project-rankine"/>
+        <category label="community" term="community"/>
     </entry>
 </feed>

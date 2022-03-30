@@ -7,14 +7,18 @@
         <lastBuildDate>Mon, 29 Nov 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://cannolicatfish.github.io/blog/welcome</link>
             <guid>welcome</guid>
             <pubDate>Mon, 29 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome to the website for Project Rankine, a mod for (currently) Minecraft 1.16.5!]]></description>
-            <content:encoded><![CDATA[<p>Welcome to the website for <strong>Project Rankine</strong>, a mod for (currently) Minecraft 1.16.5!</p><p>This website will be used to post useful information regarding our mod in the <a href="https://cannolicatfish.github.io/docs/home">wiki</a> as well as keep those interested up-to-date with our progress with the <strong>blog</strong>.
-Information and showcases will still likely also be posted at our <a href="https://discord.gg/EBtSqDN">Discord</a>. If you haven&#x27;t joined yet, please do! We have a wonderful community that can help out if you have any questions about the mod or simply want to discuss any aspect of it.</p><p>We have plenty of things still left in store for Project Rankine. We hope you enjoy our mod, whether you are a newcomer or someone who has been playing our mod for a while!</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>Welcome to the website for <strong>Project Rankine</strong>, a mod for (currently) Minecraft 1.16.5!</p><p>This website will be used to post useful information regarding our mod in the <a href="https://cannolicatfish.github.io/docs/home" target="_blank" rel="noopener noreferrer">wiki</a> as well as keep those interested up-to-date with our progress with the <strong>blog</strong>.
+Information and showcases will still likely also be posted at our <a href="https://discord.gg/EBtSqDN" target="_blank" rel="noopener noreferrer">Discord</a>. If you haven't joined yet, please do! We have a wonderful community that can help out if you have any questions about the mod or simply want to discuss any aspect of it.</p><p>We have plenty of things still left in store for Project Rankine. We hope you enjoy our mod, whether you are a newcomer or someone who has been playing our mod for a while!</p>]]></content:encoded>
+            <category>hello</category>
+            <category>project-rankine</category>
+            <category>community</category>
         </item>
     </channel>
 </rss>
