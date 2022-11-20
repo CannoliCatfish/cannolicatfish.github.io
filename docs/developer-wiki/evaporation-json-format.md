@@ -3,82 +3,93 @@ id: evaporation-json-format
 title: Evaporation JSON Format
 ---
 
-A recipe type that is used by the Evaporation Boiler and Evaporation Tower structures. 
+A recipe type that is used by the Evaporation Tower structure.
 
-### General variables:
+### Variables:
 
-**large**: Boolean, set to true by default. Determines whether the Evaporation Tower (true) or Evaporation Boiler (false) structure should be used.
+**"processTime"**: Integer. Determines the number of ticks required until recipe completion. Each layer of the tower, up to 20, will decrease the processing time by 4%.
 
-**biomes**: JSON array (string). Each entry in the array is used to determine which biomes this recipe works in. The format is the following:
-* For single biomes, use the string "B#" before the resource location. (ex. "B#minecraft:snowy_tundra").
-* For biome categories, use the string "C#" before the string used for the category. (ex. "C#taiga").
+**"consumeFluid"**: Boolean. Determines if fluid blocks will be removed from the structure on the completeion of a process.
 
-**total**: Integer. Has to be defined once by the recipe. Set this value equal to the number of outputs used in the recipe.
+**"biomes"**: JSON object. Contains "biomes" and/or "biomeTags" JSON arrays to declare all the biomes the recipe is valid in. If no biomes are listed in either array, then the recipe is valid everywhere. 
 
-**large**: Boolean, set to true by default. Determines whether the Evaporation Tower (true) or Evaporation Boiler (false) structure should be used.
+- **"biomes"**: JSON string array. List of biome resource locations as strings.
 
-**cookTime**: Integer. Determines the number of ticks required until recipe completion. Evaporation Towers can increase height to decrease processing time.
+- **"biomeTags"**: JSON string array. List of biome tag resource locations as strings.
 
-**input**: JSON object. Inside this object is the variable "block" which must be set to the fluid that will be placed in the structure. 
+**"input"**: JSON object. Inside this object is the variable "fluid" which must be set to the fluid that will be placed in the structure. 
 
-**bucket**: JSON object. Inside this object is the variable "item"/"tag" which is set to help with JEI integration. The item/tag provided does not have to be a bucket. This is mainly used to tell the player which liquid they need to place in the structure.
+**"outputs"**: JSON object array. Each object of this array contains an "item" and "weight" to determine the output from the process.  
 
-**output#**: JSON object. The "#" should be replaced in sequential numerical order for proper recipe population, starting at 1.  
+- **"item"**: Defines the item that will be outputted. Omitting the item entry will return an empty itemstack.
 
-### output# specific variables:
+- **"weight"**: Int. Set to 0 by default. Represents the likelihood of this item to be chosen as the random output. Higher weights equal a higher likelihood.
 
-**item**: Defines the item that will be outputted.
+### Examples:
 
-**weight**: Int. Set to 0 by default. Represents the likelihood of this item to be chosen as the random output from the sluicing process. Higher weights equal a higher likelihood.
-
-**min**: Int. Set to 1 by default. Represents the lowest possible count that can be produced if this item is the result.
-
-**max**: Int. Set to 1 by default. Represents the highest possible count that can be produced if this item is the result.
-
-### Example 1: Evaporating resin in a Evaporation Boiler
+Evaporating lava in any Nether biome. Lava is not consumed by the operation and thus a long "processTime" is used.
 ```
 {
   "type": "rankine:evaporation",
-  "large": false,
-  "total": 1,
-  "cookTime": 1200,
-  "input": {
-    "block": "rankine:resin"
-  },
-  "bucket": {
-    "item": "rankine:resin_bucket"
-  },
-  "output1": {
-    "item": "rankine:amber",
-    "weight": 1
+  "processTime": 20000
+  "consumeFluid": false
+  "biomes": {
+    "biomeTags": ["minecraft:is_nether"]
   }
+  "input": {
+    "fluid": "minecraft:lava"
+  },
+  "outputs": [
+    {
+      "item": "minecraft:basalt",
+      "weight": 20
+    },
+    {
+      "item": "minecraft:magma_cream",
+      "weight": 2
+    },
+    {
+      "item": "minecraft:blaze_powder",
+      "weight": 1
+    },
+    {
+      "item": "rankine:saltpeter",
+      "weight": 1
+    },
+    {
+      "item": "rankine:ash",
+      "weight": 10
+    },
+    {
+      "item": "minecraft:bone",
+      "weight": 2
+    }
+  ]
 }
 ```
 
-### Example 2: Evaporating water in an Evaporation Tower located in any Ocean Biome and the Snowy Beach biome
+Evaporating milk in a Sunflower Plains and Flower Forest biomes. Milk is consumed each operation.
 ```
 {
   "type": "rankine:evaporation",
-  "total": 3,
-  "biomes": ["C#ocean","B#minecraft:snowy_beach"],
-  "input": {
-    "block": "minecraft:water"
-  },
-  "bucket": {
-    "item": "minecraft:water_bucket"
-  },
-  "output1": {
-    "item": "rankine:bromine_nugget",
-    "weight": 1
-  },
-  "output2": {
-    "item": "rankine:iodine_nugget",
-    "weight": 1
-  },
-  "output3": {
-    "item": "rankine:salt",
-    "weight": 80
+  "processTime": 600
+  "consumeFluid": true
+  "biomes": {
+    "biomes": ["minecraft:sunflower_plains", "minecraft:flower_forest"]
   }
+  "input": {
+    "fluid": "forge:milk"
+  },
+  "outputs": [
+    {
+      "item": "minecraft:cake",
+      "weight": 2
+    }
+    {
+      "item": "rankine:cheese",
+      "weight": 10
+    }
+  ]
 }
 ```
 
